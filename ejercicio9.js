@@ -1,19 +1,18 @@
 let cadena = prompt("Introduzca una cadena");
+let cadenaMayus = cadena.toUpperCase();
+let cadenaMinus = cadena.toLowerCase();
 
-let cadenaMayus=cadena.toLocaleUpperCase;
-let cadenaMinus=cadena.toLocaleLowerCase;
 
 function mayusYminus (texto){
-    if(texto===(cadenaMayus)){
+    if(texto==cadenaMayus){
         alert("La cadena esta en mayusculas");
     }
-    if(texto===(cadenaMinus)){
+    else if(texto==cadenaMinus){
         alert("la cadena esta en minusculas");
-    }
-    if(texto !== cadenaMayus || texto !== cadenaMinus){
-        alert("La cadena tiene mayusculas y minusculas");
-    }
+    }else{
+        alert('adios');
+    }   
 }
 
 mayusYminus(cadena);
-alert(cadena);
+
