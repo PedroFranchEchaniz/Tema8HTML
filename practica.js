@@ -66,21 +66,23 @@ do{
 
 alert(palabras.join(' '));*/
 
-let resultado = NaN;
+/*let resultado = NaN;
 do{
 let num1 = prompt('Diga un número');
-let num2 = prompt('Diga otro número');
+let num2 = prompt('Diga otro número');*/
 
 
-if(isFinite(num1)&&isFinite(num2)){
+/*if(isFinite(num1)&&isFinite(num2)){
     resultado = num1/num2;
     if(isFinite(resultado)){
-    alert('El resultado de dividir ' +num1 +' entre ' +num2 +' es ' +resultado.toFixed(2);
-    }else{
+    alert('El resultado de dividir ' +num1 +' entre ' +num2 +' es ' +resultado.toFixed(2)/*para redondear y devuleve un String*/);
+     /*}else{
         alert("Esa operacion da de resultado " +resultado);
     }
 }else{
     alert('Solo números');
 }
-}while(!isFinite(resultado));
+}while(!isFinite(resultado));*/
+
+
 

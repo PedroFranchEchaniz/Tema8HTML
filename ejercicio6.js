@@ -6,7 +6,7 @@ if(dni<=0 || dni >99999999){
     alert("Numero incorrecto")
 }
 else{
-    let letra = prompt("Indique la letra");
+    let letra = prompt("Indique la letra").toUpperCase();    
     if (letras[dni%23]==letra){
         alert("Todo correcto");
     }else{

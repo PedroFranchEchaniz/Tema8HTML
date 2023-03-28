@@ -10,7 +10,7 @@ function mayusYminus (texto){
     else if(texto==cadenaMinus){
         alert("la cadena esta en minusculas");
     }else{
-        alert('adios');
+        alert('la cadena contiene mayusculas y minusculas');
     }   
 }
 
