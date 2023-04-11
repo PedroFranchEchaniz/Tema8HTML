@@ -75,7 +75,7 @@ let num2 = prompt('Diga otro número');*/
 /*if(isFinite(num1)&&isFinite(num2)){
     resultado = num1/num2;
     if(isFinite(resultado)){
-    alert('El resultado de dividir ' +num1 +' entre ' +num2 +' es ' +resultado.toFixed(2)/*para redondear y devuleve un String*/);
+    alert('El resultado de dividir ' +num1 +' entre ' +num2 +' es ' +resultado.toFixed(2)/*para redondear y devuleve un String);*/
      /*}else{
         alert("Esa operacion da de resultado " +resultado);
     }
@@ -83,6 +83,7 @@ let num2 = prompt('Diga otro número');*/
     alert('Solo números');
 }
 }while(!isFinite(resultado));*/
+
 
 
 
