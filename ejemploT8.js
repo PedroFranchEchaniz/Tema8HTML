@@ -21,11 +21,11 @@
 
 //buscarEnlaces();
 
-let boton = document.getElementById('boton');
+/*let boton = document.getElementById('boton');
 boton.addEventListener('click', crearParrafo);
-let indice = 1;
+let indice = 1;*/
 
-function crearParrafo(){
+/*function crearParrafo(){
   let parrafonuevo = document.createElement('p');
   let contenido = prompt ("Introduce el contenido del párrafo");
   parrafonuevo.innerHTML = contenido;
@@ -34,15 +34,48 @@ function crearParrafo(){
   elbody.append(parrafonuevo);
 
   document.body.append(parrafonuevo);
-}
+}*/
 
-function crearAlumno(){
+/*function crearAlumno(){
   let ultimaFila = document.querySelector('tr:last-child');
   let nuevaFila = ultimaFila.cloneNode(true);
   nuevaFila.firstElementChild.innerHTML = prompt('Indique el nombre del alumno');
   nuevaFila.lastElementChild.innerHTML = ++indice;
 
   document.querySelector('table').append(nuevaFila);
-}
+}*/
 /*crearParrafo(prompt("Introduce el contenido del párrafo"));*/
 
+let botonCambiar = document.getElementById('btncambiar');
+botonCambiar.addEventListener('click', cambiarTamano);
+
+let botonOcultar = document.getElementById('btnocultar');
+botonOcultar.addEventListener('click', ocultar);
+botonOcultar.addEventListener('click', cambiarBoton);
+
+
+
+function cambiarTamano(){
+  let tamano = prompt('Introduce el tamaño deseado');
+  let img = document.querySelector('img');
+  img.width = tamano;
+}
+
+/*function ocultar(){
+  let img = document.querySelector('img');
+  if(img.hidden){
+  img.hidden = false;
+  }else{
+    img.hidden = true;
+  }
+}*/
+
+function ocultar(){
+  let img = document.querySelector('img');
+  img.hidden = !img.hidden;
+}
+
+function cambiarBoton(){
+  botonOcultar.classList.toggle('btn-danger');
+  botonOcultar.innerHT = 'Mostrar';
+}
