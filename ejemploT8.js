@@ -75,7 +75,18 @@ function ocultar(){
   img.hidden = !img.hidden;
 }
 
+let botones = document.querySelectorAll('button'); /*esto hace que funciones para todos los botones*/
+for(let boton of botones){
+  boton.addEventListener('click', cambiarBoton);
+}
+
 function cambiarBoton(){
-  botonOcultar.classList.toggle('btn-danger');
-  botonOcultar.innerHT = 'Mostrar';
+  this.classList.toggle('btn-danger');
+  this.innerHT = 'Mostrar';
+}
+
+function cambiarBoton(elEvento){
+  this.classList.toggle('btn-danger');
+  alert('Es un evento ' +elEvento.type);
+  alert('Sobre el boton' +elEvento.target.id)
 }
